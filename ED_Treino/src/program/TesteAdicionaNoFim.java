@@ -15,11 +15,9 @@ public class TesteAdicionaNoFim {
 		
 		lista.adiciona(a1);
 		lista.adiciona(a2);
+		lista.adiciona(1,a3);
 		
 		System.out.println(lista.toString());
-		System.out.println(lista.tamanho());
-		System.out.println(lista.contem(a3));
-		System.out.println(lista.pega(4));
 		
 	}
 }

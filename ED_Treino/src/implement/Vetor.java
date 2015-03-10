@@ -35,7 +35,7 @@ public class Vetor {
 		for (int i = this.totalDeAlunos - 1; i >= posicao; i--) {
 			this.alunos[i + 1] = this.alunos[i];
 		}
-		
+
 		this.alunos[posicao] = aluno;
 		this.totalDeAlunos++;
 	}
