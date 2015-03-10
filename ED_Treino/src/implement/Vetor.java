@@ -26,6 +26,18 @@ public class Vetor {
 	//ou na primeira posicao vazia no metoro posicaoValida
 	public void adiciona(int posicao, Aluno aluno) {
 		
+		//posicao menor que 0 ou maior q o total de 
+		//alunos
+		if(!this.posicaoValida(posicao)) {
+			throw new IllegalArgumentException("Posicao invalida");
+		}
+		
+		for (int i = this.totalDeAlunos - 1; i >= posicao; i--) {
+			this.alunos[i + 1] = this.alunos[i];
+		}
+		
+		this.alunos[posicao] = aluno;
+		this.totalDeAlunos++;
 	}
 	
 	private boolean posicaoValida(int pos) {
