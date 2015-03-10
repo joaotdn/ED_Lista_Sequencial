@@ -22,8 +22,14 @@ public class Vetor {
 		this.totalDeAlunos++;
 	}
 	
+	//Para adicionar um aluno, deve-se colocar em pos. ja ocupada
+	//ou na primeira posicao vazia no metoro posicaoValida
 	public void adiciona(int posicao, Aluno aluno) {
 		
+	}
+	
+	private boolean posicaoValida(int pos) {
+		return pos >= 0 && pos <= this.totalDeAlunos;
 	}
 	
 	public Aluno pega(int posicao) {
@@ -35,7 +41,7 @@ public class Vetor {
 	
 	//true se a pos tiver ocupada e false caso contrario
 	//necessario para pegar o aluno no metodo acima
-	public boolean posicaoOcupada(int pos) {
+	private boolean posicaoOcupada(int pos) {
 		//se a posiao n‹o estiver ocupada, retorna false
 		return pos >= 0 && pos < this.totalDeAlunos;
 	}

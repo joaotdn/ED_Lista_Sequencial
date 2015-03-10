@@ -19,7 +19,7 @@ public class TesteAdicionaNoFim {
 		System.out.println(lista.toString());
 		System.out.println(lista.tamanho());
 		System.out.println(lista.contem(a3));
-		System.out.println(lista.posicaoOcupada(3));
+		System.out.println(lista.pega(4));
 		
 	}
 }
